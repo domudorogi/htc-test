@@ -1,0 +1,6 @@
+mixin title(titleEmoji, titleText)
+    .title.flex.align-items-center
+        if titleEmoji
+            .title__emoji
+                +img(titleEmoji, titleText)
+        h2.title__title #{titleText}

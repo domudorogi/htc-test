@@ -1,0 +1,53 @@
+// ==============================
+// Base styles
+// ==============================
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: $font-main;
+    line-height: $line-height-basic;
+    color: $color-main;
+    font-size: $font-basic;
+
+    * {
+        box-sizing: border-box;
+    }
+}
+
+p {
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $color-htc;
+    @include animate($animate-speed);
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.wrap {
+    &__header {
+        flex: 0 0 auto;
+    }
+
+    &__main {
+        flex: 1 0 auto;
+    }
+
+    &__footer {
+        flex: 0 0 auto;
+    }
+}
+
+.img-fluid {
+    max-width: 100%;
+}

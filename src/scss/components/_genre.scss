@@ -1,0 +1,74 @@
+// ==============================
+// Genre
+// ==============================
+
+.genre {
+    color: $color-white;
+    text-decoration: none !important;
+    padding: 15px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    @media #{$media-min-md} {
+        padding: 25px;
+    }
+
+    @media #{$media-min-lg} {
+        margin-bottom: 0;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        opacity: .8;
+        @include animate($animate-speed);
+    }
+
+    &--shadow {
+        box-shadow: inset 0px 0px 16px 0px rgba(0, 0, 0, 0.15);
+    }
+
+    &--bg1:after {
+        background: rgb(242, 201, 76);
+        background: linear-gradient(125deg, rgba(242, 201, 76, 1) 0%, rgba(242, 154, 74, 1) 100%);
+    }
+
+    &--bg2:after {
+        background: rgb(242, 153, 74);
+        background: linear-gradient(125deg, rgba(242, 153, 74, 1) 0%, rgba(235, 87, 87, 1) 100%);
+    }
+
+    &--bg3:after {
+        background: rgb(86, 204, 242);
+        background: linear-gradient(125deg, rgba(86, 204, 242, 1) 0%, rgba(47, 128, 237, 1) 100%);
+    }
+
+    &--bg4:after {
+        background: rgb(130, 130, 130);
+        background: linear-gradient(125deg, rgba(130, 130, 130, 1) 0%, rgba(51, 51, 51, 1) 100%);
+    }
+
+    &:hover:after {
+        opacity: 1;
+    }
+
+    &__emoji {
+        position: relative;
+        z-index: 2;
+        margin-top: 55px;
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        position: relative;
+        z-index: 2;
+        font-weight: 400;
+    }
+}

@@ -1,0 +1,33 @@
+-
+    var genres = [
+        {
+            genreEmoji: 'icon2.svg',
+            genreTitle: 'Комедии',
+            genreLink: '#',
+            genreGradient: 'genre--bg1'
+        },
+        {
+            genreEmoji: 'icon3.svg',
+            genreTitle: 'Драмы',
+            genreLink: '#',
+            genreGradient: 'genre--bg2'
+        },
+        {
+            genreEmoji: 'icon4.svg',
+            genreTitle: 'Фантастика',
+            genreLink: '#',
+            genreGradient: 'genre--bg3'
+        },
+        {
+            genreEmoji: 'icon5.svg',
+            genreTitle: 'Ужасы',
+            genreLink: '#',
+            genreGradient: 'genre--bg4'
+        },
+    ]
+section.section
+    +title(null, 'Жанры')
+    .row.flex.flex-wrap
+        each genre in genres
+            .col
+                +genre(genre)

@@ -1,0 +1,19 @@
+// ==============================
+// Footer
+// ==============================
+
+.footer {
+    background-color: $color-grey;
+    padding: 20px 0;
+    margin-top: 55px;
+}
+
+.footer-information {
+    &__logotype {
+        width: 70px;
+        margin-top: 7px;
+    }
+    &__text {
+        @include calcWidth(100%, 70px);
+    }
+}

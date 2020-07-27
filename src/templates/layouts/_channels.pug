@@ -1,0 +1,91 @@
+-
+    var channels = [
+        {
+            channelLogo: 'logo1.png',
+            channelTitle: 'Первый канал',
+            channelList: [
+                {
+                    channelListTime: '13:00',
+                    channelListProgram: 'Новости (с субтитрами)',
+                    channelListActive: true
+                },
+                {
+                    channelListTime: '14:00',
+                    channelListProgram: 'Давай поженимся',
+                    channelListActive: false
+                },
+                {
+                    channelListTime: '15:00',
+                    channelListProgram: 'Другие новости',
+                    channelListActive: false
+                },
+            ]
+        },
+        {
+            channelLogo: 'logo2.png',
+            channelTitle: '2x2',
+            channelList: [
+                {
+                    channelListTime: '13:00',
+                    channelListProgram: 'МУЛЬТ ТВ. Сезон 4, 7 серия',
+                    channelListActive: true
+                },
+                {
+                    channelListTime: '14:00',
+                    channelListProgram: 'ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия',
+                    channelListActive: false
+                },
+                {
+                    channelListTime: '15:00',
+                    channelListProgram: 'БУРДАШЕВ. Сезон 1, 20 серия',
+                    channelListActive: false
+                },
+            ]
+        },
+        {
+            channelLogo: 'logo3.png',
+            channelTitle: 'РБК',
+            channelList: [
+                {
+                    channelListTime: '13:00',
+                    channelListProgram: 'ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС',
+                    channelListActive: true
+                },
+                {
+                    channelListTime: '14:00',
+                    channelListProgram: 'ДЕНЬ. Главные темы',
+                    channelListActive: false
+                },
+                {
+                    channelListTime: '15:00',
+                    channelListProgram: 'Главные новости',
+                    channelListActive: false
+                },
+            ]
+        },
+        {
+            channelLogo: 'logo4.png',
+            channelTitle: 'AMEDIA PREMIUM',
+            channelList: [
+                {
+                    channelListTime: '13:00',
+                    channelListProgram: 'Клиент всегда мёртв',
+                    channelListActive: true
+                },
+                {
+                    channelListTime: '14:00',
+                    channelListProgram: 'Голодные игры: Сойка-пересмешница. Часть I',
+                    channelListActive: false
+                },
+                {
+                    channelListTime: '15:00',
+                    channelListProgram: 'Секс в большом городе',
+                    channelListActive: false
+                },
+            ]
+        },
+    ]
+
+section.section
+    each channel in channels
+        +channel(channel)

@@ -1,0 +1,12 @@
+// ==============================
+// Title
+// ==============================
+
+.title {
+    margin-bottom: 18px;
+
+    &__emoji {
+        margin-right: 7px;
+        line-height: $line-height-1;
+    }
+}

@@ -1,0 +1,5 @@
+mixin genre(info)
+    a(href=info.genreLink, class=info.genreGradient).genre.genre--shadow.flex.flex--column.br-6.align-items-center.justify-content-center
+        .genre__emoji
+            +img(getImg(info.genreEmoji), info.genreTitle)
+        .genre__title.h3.mt-auto #{info.genreTitle}

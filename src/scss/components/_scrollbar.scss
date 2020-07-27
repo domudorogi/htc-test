@@ -1,0 +1,18 @@
+// ==============================
+// Custom scrollbar
+// ==============================
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 2px;
+    background-color: $color-grey;
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    background-color: $color-grey;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: $color-red;
+}

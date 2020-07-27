@@ -1,0 +1,14 @@
+.modal.fade.scrollbar.jsModal#modalAuth
+    .modal__dialog.w-100
+        .modal__content.br-8
+            form(action="").form.jsFormAuth#formAuth
+                .form__item.h1.text-center Вход
+                .form__item
+                    input(type="text", placeholder="Логин", name="login", title="Введите имя и фамилию", required).input.w-100
+                .form__item
+                    input(type="password", placeholder="Пароль", name="password", title="Введите любой пароль", required).input.w-100
+                .form__item.checkbox
+                    input(type="checkbox", name="remember").checkbox__input#checkRemeber
+                    label(for="checkRemeber", title="Сохранять авторизацию").checkbox__label Запомнить
+                .form__item.form__item--button.text-center
+                    button.button.button--red.br-4#formAuthSend Войти

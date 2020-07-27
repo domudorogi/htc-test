@@ -1,0 +1,42 @@
+// ==============================
+// Header
+// ==============================
+
+.header {
+    padding: 35px 0;
+    margin-bottom: 15px;
+
+    &__logotype {
+        order: 1;
+        width: 50%;
+        padding-right: 10px;
+        margin-right: auto;
+
+        @media #{$media-min-md} {
+            width: 32%;
+        }
+    }
+
+    &__search {
+        width: 100%;
+        order: 3;
+        padding: 0 10px;
+
+        @media #{$media-min-md} {
+            width: 36%;
+            order: 2;
+        }
+    }
+
+    &__user {
+        order: 2;
+        width: 50%;
+        padding-left: 10px;
+        margin-left: auto;
+
+        @media #{$media-min-md} {
+            width: 32%;
+            order: 3;
+        }
+    }
+}

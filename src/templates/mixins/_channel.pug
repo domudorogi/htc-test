@@ -1,0 +1,11 @@
+mixin channel(info)
+    .channel.flex.br-8.align-items-center
+        .channel__logotype.flex.justify-content-center
+            +img(getImg(info.channelLogo), info.channelTitle)
+        .channel__information
+            .channel__title.h3 #{info.channelTitle}
+            ul.channel__list
+                each program in info.channelList
+                    li(class = program.channelListActive ? 'is-active' : '').channel__program.flex
+                        span.channel__program-time #{program.channelListTime}
+                        span.channel__program-title #{program.channelListProgram}

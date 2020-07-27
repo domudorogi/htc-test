@@ -1,0 +1,34 @@
+// ==============================
+// Buttons
+// ==============================
+
+.button {
+    outline: none;
+    display: inline-block;
+    background-color: transparent;
+    border: none;
+    @include animate($animate-speed);
+    cursor: pointer;
+    font-family: $font-main;
+    font-size: $font-basic;
+    padding: 10px 34px;
+    font-weight: 500;
+
+    &--search {
+        color: $color-red;
+        padding: 0;
+
+        &:hover {
+            color: $color-red-hover;
+        }
+    }
+
+    &--red {
+        color: $color-white;
+        background-color: $color-red;
+
+        &:hover {
+            background-color: $color-red-hover;
+        }
+    }
+}

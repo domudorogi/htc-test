@@ -1,0 +1,31 @@
+// ==============================
+// Mixins
+// ==============================
+
+@mixin calcWidth($num1, $num2) {
+    width: calc(#{$num1} - #{$num2});
+}
+
+@mixin animate($num) {
+    -webkit-transition: #{$num}s;
+    -moz-transition: #{$num}s;
+    -o-transition: #{$num}s;
+}
+
+@mixin placeholder {
+    &::-webkit-input-placeholder {
+        @content
+    }
+
+    &:-moz-placeholder {
+        @content
+    }
+
+    &::-moz-placeholder {
+        @content
+    }
+
+    &:-ms-input-placeholder {
+        @content
+    }
+}

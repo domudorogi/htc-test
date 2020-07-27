@@ -1,0 +1,16 @@
+header.header
+    .container
+        .flex.flex-wrap.align-items-center.justify-content-center
+            a(href="#").header__logotype.logotype.flex
+                +img(getImg('logo.svg','Видеосервис'))
+            .user.header__user#userAuth
+                .user__button.text-right
+                    button(data-modal='modalAuth').button.button--red.br-4 Войти
+                .user__auth.user-auth.flex.justify-content-end
+                    .user-auth__name.block#userName
+                    input(type="text").none.user-auth__input.input#userInputName
+                    .user-auth__exit
+                        button.button.button--search#userExit Выйти
+            .search.header__search.flex
+                input.input.search__input(type='search', placeholder='Поиск...')
+                button.button.button--search.search__button Найти

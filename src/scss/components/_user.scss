@@ -1,0 +1,29 @@
+// ==============================
+// User
+// ==============================
+
+.user {
+    &__button {
+        display: none;
+    }
+
+    &:not(.is-authorized) {
+        .user__button {
+            display: block;
+        }
+
+        .user__auth {
+            display: none;
+        }
+    }
+}
+
+.user-auth {
+    &__name {
+        font-weight: 500;
+    }
+
+    &__exit {
+        margin-left: 20px;
+    }
+}

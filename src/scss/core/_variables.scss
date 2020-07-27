@@ -1,0 +1,49 @@
+// ==============================
+// Variables
+// ==============================
+
+// Fonts
+$font-main: 'Rubik',
+sans-serif;
+
+// Colors
+$color-grey: #F2F2F2;
+$color-grey-dark: #828282;
+$color-main: #333333;
+$color-white: #ffffff;
+$color-red: #E5261E;
+$color-red-hover: #CC221B;
+$color-htc: #1F4766;
+
+// Font size
+$font-h1: 28px;
+$font-h2: 24px;
+$font-h3: 20px;
+$font-basic: 16px;
+
+// Media
+$min-xl-width: 1200px;
+$max-xl-width: 1199px;
+$min-lg-width: 992px;
+$max-lg-width: 991px;
+$min-md-width: 768px;
+$max-md-width: 767px;
+$min-sm-width: 576px;
+$max-sm-width: 575px;
+$media-min-xl: 'screen and (min-width: #{$min-xl-width})';
+$media-max-xl: 'screen and (max-width: #{$max-xl-width})';
+$media-min-lg: 'screen and (min-width: #{$min-lg-width})';
+$media-max-lg: 'screen and (max-width: #{$max-lg-width})';
+$media-min-md: 'screen and (min-width: #{$min-md-width})';
+$media-max-md: 'screen and (max-width: #{$max-md-width})';
+$media-min-sm: 'screen and (min-width: #{$min-sm-width})';
+$media-max-sm: 'screen and (max-width: #{$max-sm-width})';
+
+// Line height
+$line-height-1: 1;
+$line-height-heading: 1.2;
+$line-height-text: 1.4;
+$line-height-basic: 1.72;
+
+// Animate
+$animate-speed: .15;

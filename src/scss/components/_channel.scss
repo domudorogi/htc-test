@@ -1,0 +1,47 @@
+// ==============================
+// Channel
+// ==============================
+
+.channel {
+    background-color: $color-grey;
+    padding: 19px 21px;
+
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+
+    &__logotype {
+        width: 33.3%;
+        padding-right: 21px;
+    }
+
+    &__information {
+        width: 66.6%;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+    }
+
+    &__list {
+
+    }
+
+    &__program {
+        &:not(:last-child) {
+            margin-bottom: 4px;
+        }
+
+        &.is-active {
+            color: $color-red;
+        }
+    }
+
+    &__program-time {
+        width: 60px;
+    }
+
+    &__program-title {
+        @include calcWidth(100%, 60px);
+    }
+}

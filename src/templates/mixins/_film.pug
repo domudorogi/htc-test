@@ -1,0 +1,9 @@
+mixin film(info)
+    a(href=info.filmLink).film.block
+        .film__description.br-6
+            .film__img
+                +img(getImg(info.filmImg), info.filmName)
+            .film__text.scrollbar
+                p
+                    | #{info.filmDescription}
+        .film__title.h3 #{info.filmName}

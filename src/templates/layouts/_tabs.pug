@@ -1,0 +1,13 @@
+.container
+    .tabs.jsTabs#tabsFirst
+        ul.tabs__nav.flex.flex-wrap.justify-content-center
+            li.tabs__nav-item
+                a(href="#tab1").tabs__link.h1.block.is-active Фильмы
+            li.tabs__nav-item
+                a(href="#tab2").tabs__link.h1.block Телеканалы
+        .tabs__content
+            .tabs__pane.is-active#tab1
+                include ../layouts/_new
+                include ../layouts/_genres
+            .tabs__pane#tab2
+                include ../layouts/_channels
